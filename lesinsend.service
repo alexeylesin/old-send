@@ -1,0 +1,17 @@
+[Unit]
+Description=LesinSend
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+
+Environment=NODE_ENV=production
+Environment=PSITRANSFER_PORT=5000
+
+WorkingDirectory=/opt/lesinsend
+ExecStart=/usr/bin/node app.js
+
+[Install]
+WantedBy=multi-user.target
