@@ -32,7 +32,7 @@ const config =  {
     "604800": "1 неделя",
   },
   // admin password, set to false to disable /admin page
-  "adminPass": "H6hDqYv2NZ5JsBP8",
+  "adminPass": false,
   // upload password, set to false to disable
   "uploadPass": false,
   // make the bucket-password field mandatory
